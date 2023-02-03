@@ -43,15 +43,15 @@
                         label="Symbol";
 
 // -----------------------------------------------------------------------------------------
-// |      | HAT |  &  |  #  |  ~  |  (  |   | mx  | my  | Ctr | Flt |     |      |
+// |      | HAT |  &  |  #  |  ~  |  (  |   |  )  | Ctr | Flt | mx  | my  |      |
 // |      |  `  |  |  |  !  |   ' |  {  |   | wfl | wfd | wfu | wfr |     |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   | wm  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
-   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &YB_MX  &YB_MY &YB_CC &YB_CF ____  ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp SQT  &TD_Brc    /**/    &YB_FL  &YB_FD &YB_FU &YB_FR ____  ____
-   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &tog WM ____   ____   ____   ____  ____
-                              &kp UNDER &kp MINUS &MC_DQT   /**/    ____    ____   ____
+   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &kp RPAR &YB_CC &YB_CF &YB_MX &YB_MY  ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp SQT   &TD_Brc   /**/    &YB_FL   &YB_FD &YB_FU &YB_FR ____    ____
+   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &tog WM  ____   ____   ____   ____    ____
+                              &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____   ____
                         >;
                 };
 
