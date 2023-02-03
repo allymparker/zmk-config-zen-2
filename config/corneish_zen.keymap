@@ -44,12 +44,12 @@
 
 // -----------------------------------------------------------------------------------------
 // |      | HAT |  &  |  #  |  ~  |  (  |   | mx  | my  | Ctr | Flt |     |      |
-// |      |  `  |  |  |  !  | '\? |  {  |   | wfl | wfd | wfu | wfr |     |      |
+// |      |  `  |  |  |  !  |   ' |  {  |   | wfl | wfd | wfu | wfr |     |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   | wm  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
    ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &YB_MX  &YB_MY &YB_CC &YB_CF ____  ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &TD_QTQM  &TD_Brc   /**/    &YB_FL  &YB_FD &YB_FU &YB_FR ____  ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp SQT  &TD_Brc    /**/    &YB_FL  &YB_FD &YB_FU &YB_FR ____  ____
    ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &tog WM ____   ____   ____   ____  ____
                               &kp UNDER &kp MINUS &MC_DQT   /**/    ____    ____   ____
                         >;
@@ -200,13 +200,6 @@
         bindings = <&kp LBKT>, <&kp RBKT>;
     };
 
-    TD_QTQM: td_qtqm {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_QTQM";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp SQT>, <&kp QMARK>;
-    };
 /*
     SW_APP: switch_application {
       compatible = "zmk,behavior-tri-state";
