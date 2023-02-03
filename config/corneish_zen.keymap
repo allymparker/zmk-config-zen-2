@@ -64,7 +64,7 @@
 //                    |     |     |     |   |     | Spot |     |
                         bindings = <
    ____    ____    ____    ____    ____    ____       /**/    ____          &MC_PWD     &MC_NWD  &kp PG_UP  ____  ____
-   ____    &MC_UND &MC_CUT &MC_CPY &MC_PST &caps_word /**/    &kp LEFT      &kp DOWN    &kp UP   &kp RIGHT  ____  ____
+   ____    &MC_UND &MC_CUT &MC_CPY &MC_PST &TD_Caps   /**/    &kp LEFT      &kp DOWN    &kp UP   &kp RIGHT  ____  ____
    ____    ____    ____    ____    ____    ____       /**/    ____          &MC_HME     &MC_END  &kp PG_DN  ____  ____
                            ____    ____    ____       /**/    &kp LA(BSPC)  &kp LG(SPC) ____
                         >;
@@ -166,6 +166,14 @@
       label = "CAPS_WORD";
       #binding-cells = <0>;
       continue-list = <UNDERSCORE MINUS BSPC>;
+    };
+
+    TD_Caps: td_caps {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_CAPS";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&caps_word>, <&kp CAPS>;
     };
 
     TD_Par: td_paren {
